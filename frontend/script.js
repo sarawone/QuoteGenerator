@@ -10,7 +10,9 @@ boxCont.style.borderRadius = "10px";
 
 btnGet.addEventListener('click',async () =>{
     try{
-        const response = await fetch('http://localhost:3000/api/data');
+        //const response = await fetch('http://localhost:3000/api/data'); for local host
+
+        const response = await fetch('https://i5wi51lvo0j3sv9ngh67eayb.trainees.hosting.cyf.academy');
         const data = await response.json();
         
         quoteText.textContent = `"${data.quote}"`;

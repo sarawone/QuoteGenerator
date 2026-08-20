@@ -11,6 +11,25 @@
         <p id= "autCont"></p>
     </div>
     <button id ="btnQuote">Get Quote</button> 
+
+    
+    <form id="quoteForm">
+        <fieldset>
+            <legend>Add Your Favorite Quotes</legend>
+
+            <div id = "authorContent">
+                <label for="author"> Author Name :</label> <br>
+                <input type="text" id="author" placeholder="Type Author Name" required/>
+            </div>
+            <div id = "quoteContent">
+                <label for="quote"> Quote : </label> <br>
+                <textarea id="quote" placeholder="Type your Quote......" required></textarea>
+            </div>
+    
+            <button type="submit" >Submit Quote</button>
+        </fieldset>      
+    </form>
+    <p id="statusMsg"></p>
     <script src="script.js"></script> 
 </body>
 </html>

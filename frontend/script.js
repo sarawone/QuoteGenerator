@@ -49,7 +49,18 @@ submitForm.addEventListener('submit', async (e)=>{
 
     //send data to backend 
     try{
-        const response = await fetch('http://localhost:3000/api/data',{
+        /*const response = await fetch('http://localhost:3000/api/data',{
+            method: 'POST',
+            headers: {
+                'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify({
+                quote:quoteValue,
+                author:authorValue
+            })
+        }); */ //for local host
+
+        const response = await fetch('https://i5wi51lvo0j3sv9ngh67eayb.trainees.hosting.cyf.academy',{
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'

@@ -2,7 +2,11 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: '*', // Allows requests from any frontend domain
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }));
 app.use(express.json());   // to parse json body from frontend
 const PORT = 3000;
 

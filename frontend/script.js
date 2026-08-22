@@ -67,8 +67,8 @@ submitForm.addEventListener('submit', async (e)=>{
             statusMsg.style.color = "green";
             submitForm.reset();
 
-            quoteText.textContent = `"${result.quote}"`;
-            authText.textContent = `~${result.author}`;
+            quoteText.textContent = `"${result.data.quote}"`;
+            authText.textContent = `~${result.data.author}`;
         }
         else
         {

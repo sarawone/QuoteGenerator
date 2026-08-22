@@ -30,7 +30,7 @@ app.get("/api/data",async (req,res) => {
    
 });
 
-app.post("api/data",(req,res) => {
+app.post("/api/data",(req,res) => {
 
     const {quote,author} = req.body;
 
